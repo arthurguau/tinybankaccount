@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApimServiceName": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "properties": {
+        "displayName": "Account Domain",
+        "description": "TThis api set include both consumer and provider sides apis. Business Unit - Platform Architecture. Contact - platform@ing.com.au",
+        "versionQueryName": "versionQuery",
+        "versionHeaderName": "versionHeader",
+        "versioningScheme": "Query"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/accVersionSetID')]",
+      "type": "Microsoft.ApiManagement/service/apiVersionSets",
+      "apiVersion": "2021-01-01-preview",
+      "dependsOn": []
+    }
+  ]
+}

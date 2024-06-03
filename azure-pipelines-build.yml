@@ -1,0 +1,46 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- task: AzureFileCopy@4
+  inputs:
+    SourcePath: 'api'
+    azureSubscription: 'account-storage-conn'
+    Destination: 'AzureBlob'
+    storage: 'servicemeshstorage'
+    ContainerName: 'account-api-templates'
+
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'account-storage-conn'
+    subscriptionId: '3d8129f5-b648-4ef9-9ee6-35f9b169abd4'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'ServiceMesh-Demo'
+    location: 'Australia East'
+    templateLocation: 'Linked artifact'
+    csmFile: 'api/Microservice-Governance-Demo-API-master.template.json'
+    csmParametersFile: 'api/Microservice-Governance-Demo-API-parameters.json'
+    deploymentMode: 'Validation'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'api'
+    ArtifactName: 'drop-account'
+    publishLocation: 'Container'

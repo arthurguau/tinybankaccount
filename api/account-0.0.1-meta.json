@@ -1,0 +1,13 @@
+{
+	"name": "Account Management Domain Service",
+	"description": "Account domain API showcase demonstrating how to automatically generate an openapi spec and client based on this.",
+	"labels": [
+		"customer"
+	],
+	"properties": {
+		"Lifecycle": "Retired",
+		"Owner": "Digital"
+	},
+	"groupId": "OB",
+	"contentId": 2
+}
