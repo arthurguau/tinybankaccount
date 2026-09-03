@@ -1,0 +1,7 @@
+site_name: Account Service Documentation
+plugins:
+  - techdocs-core # Essential plugin required by Backstage
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
