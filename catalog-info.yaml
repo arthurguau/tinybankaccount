@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tinybank-account
+  description: A sample microservice catalogued in Backstage.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: backstage/backstage
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
+  system: core-system
