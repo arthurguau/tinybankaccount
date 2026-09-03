@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: tinybank-account-api
-  description: Brian's Swagger PetStore Sample REST API
+  description: ING Platorm Tinybank Account REST API
 spec:
   type: openapi
   lifecycle: production
