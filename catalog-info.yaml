@@ -16,4 +16,4 @@ spec:
   consumesApis:
     - tinybank-customer-api
   dependsOn:
-    - resource: tinybank-account
+    - resource: tinybank-consumer
