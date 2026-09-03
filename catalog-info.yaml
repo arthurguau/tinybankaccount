@@ -11,3 +11,5 @@ spec:
   lifecycle: production
   owner: guests
   system: core-system
+  definition:
+    $text: ./api/*openapi*.yaml
