@@ -3,7 +3,6 @@ kind: Component
 metadata:
   annotations:
     backstage.io/kubernetes-id: tinybankaccount
-    #b ackstage.io/kubernetes-label-selector: app=tinybank-customer
   name: tinybankaccount
   description: A sample microservice catalogued in Backstage.
   annotations:
