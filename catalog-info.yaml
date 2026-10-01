@@ -2,9 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
-    backstage.io/kubernetes-id: tinybank-account
+    backstage.io/kubernetes-id: tinybankaccount
     #b ackstage.io/kubernetes-label-selector: app=tinybank-customer
-  name: tinybank-account
+  name: tinybankaccount
   description: A sample microservice catalogued in Backstage.
   annotations:
     backstage.io/techdocs-ref: dir:.
@@ -20,4 +20,4 @@ spec:
   consumesApis:
     - tinybank-customer-api
   dependsOn:
-    - component: default/tinybank-customer
+    - component: default/tinybankcustomer
