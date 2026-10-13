@@ -17,5 +17,5 @@ spec:
   consumesApis:
     - tinybank-customer-api
   dependsOn:
-    - component: default/postgres-database
-    - component: default/tinybankcustomer
+    - component: postgres-database
+    - component: tinybankcustomer
