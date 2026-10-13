@@ -18,4 +18,3 @@ spec:
     - tinybank-customer-api
   dependsOn:
    - component:postgres-database
-   - component:tinybankcustomer
