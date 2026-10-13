@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
     backstage.io/kubernetes-id: tinybankaccount
   name: tinybankaccount
   description: A sample microservice catalogued in Backstage.
@@ -15,4 +17,5 @@ spec:
   consumesApis:
     - tinybank-customer-api
   dependsOn:
-    - component: "default/tinybankcustomer"
+    - component: default/postgres-database
+    - component: default/tinybankcustomer
