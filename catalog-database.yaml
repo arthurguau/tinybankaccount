@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: postgres-database
+  name: postgres-account
   description: Database used for the tinybank application. It is a PostgreSQL database that stores account and customer information.
 spec:
   type: database
