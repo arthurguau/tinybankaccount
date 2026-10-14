@@ -10,7 +10,7 @@ metadata:
   tags:
     - microservice
     - springboot
-    - domain service
+    - domain
 spec:
   type: service
   lifecycle: production
