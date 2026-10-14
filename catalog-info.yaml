@@ -7,6 +7,10 @@ metadata:
     backstage.io/kubernetes-id: tinybankaccount
   name: tinybankaccount
   description: A sample microservice catalogued in Backstage.
+  tags:
+    - microservice
+    - springboot
+    - domain service
 spec:
   type: service
   lifecycle: production
