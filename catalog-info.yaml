@@ -19,7 +19,7 @@ spec:
   providesApis:
     - tinybank-account-api
   consumesApis:
-    - tinybank-customer-api
+    # - tinybank-customer-api
     - tinybank-customer-event-api
   dependsOn:
    - component:postgres-account
