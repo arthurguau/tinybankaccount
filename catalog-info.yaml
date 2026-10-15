@@ -15,7 +15,6 @@ spec:
   type: service
   lifecycle: production
   owner: guests
-  system: core-system
   providesApis:
     - tinybank-account-api
   consumesApis:
