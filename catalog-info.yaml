@@ -23,3 +23,4 @@ spec:
     - tinybank-customer-event-api
   dependsOn:
    - component:postgres-account
+   - resource:default/customer-event-topic
