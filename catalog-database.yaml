@@ -7,4 +7,4 @@ spec:
   type: database
   system: tinybank
   lifecycle: production
-  owner: guests
+  owner: group:platform-team

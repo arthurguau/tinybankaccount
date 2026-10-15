@@ -14,7 +14,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: guests
+  owner: group:platform-team
   system: tinybank
   providesApis:
     - tinybank-account-api
